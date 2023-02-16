@@ -1,0 +1,125 @@
+.menu {
+    position: relative;
+    width: 420px;
+    height: 70px;
+    background-color: #141414;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+    width: 350px;
+}
+
+.menu ul li{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.menuOption {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.menuIcon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: whitesmoke;
+    transform: translateY(0);
+}
+
+.menuActiveIcon {
+    transform: translateY(-32px);
+}
+
+.menuText {
+    position: absolute;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.menuActiveText {
+    opacity: 1;
+    transform: translateY(15px);
+}
+
+.optionSelected {
+    position: absolute;
+    top: -50%;
+    left: 34px;
+    width: 60px;
+    height: 60px;
+    background-color: #ff4500;
+    border-radius: 50%;
+    border: 6px solid whitesmoke;
+}
+
+.optionSelected::before {
+    content: '';
+    position: absolute;
+    top: 29px;
+    left: -22.8px;
+    width: 20px;
+    height: 20px;
+    background-color: #141414;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -9px 0 0 whitesmoke;
+}
+
+.optionSelected::after {
+    content: '';
+    position: absolute;
+    top: 29px;
+    right: -22.8px;
+    width: 20px;
+    height: 20px;
+    background-color: #141414;
+    border-top-left-radius: 20px;
+    box-shadow: 0px -9px 0 0 whitesmoke;
+}
+
+.optionSelected0 {
+    transition: 0.5s;
+    transform: translateX(0);
+}
+
+.optionSelected1 {
+    transition: 0.5s;
+    transform: translateX(70px);
+}
+
+.optionSelected2 {
+    transition: 0.5s;
+    transform: translateX(140px);
+}
+
+.optionSelected3 {
+    transition: 0.5s;
+    transform: translateX(210px);
+}
+
+.optionSelected4 {
+    transition: 0.5s;
+    transform: translateX(280px);
+}
